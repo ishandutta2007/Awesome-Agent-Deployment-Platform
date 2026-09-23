@@ -6,7 +6,7 @@
 
 <p align="center">
   <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
-  <a href="https://github.com/ishandutta2007/Awesome-Agent-Deployment-Platform"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Agent-Deployment-Platform?style=social" alt="GitHub stars" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Agent-Deployment-Platform"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Agent-Deployment-Platform?style=social" alt="GitHub_Stars" /></a>
   <a href="https://github.com/ishandutta2007/Awesome-Agent-Deployment-Platform/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Agent-Deployment-Platform?style=social" alt="GitHub forks" /></a>
   <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
 </p>
@@ -53,9 +53,9 @@ Welcome to the **Awesome Agent Deployment Platform** repository! A curated list 
 ## 🔓 Open-Source GitHub Projects ⚡
 
 > [!TIP]
-> Production-ready open-source engines and frameworks for hosting LLMs, serving multi-agent graphs, and local model inference. Sorted by **GitHub Star Count** (Descending).
+> Production-ready open-source engines and frameworks for hosting LLMs, serving multi-agent graphs, and local model inference. Sorted by **GitHub Stars_Count** (Descending).
 
-| Repository 📦 | Description 🎯 | GitHub Stars ⭐ |
+| Repository 📦 | Description 🎯 | GitHub_Stars ⭐ |
 | :--- | :--- | :--- |
 | **[Ollama](https://github.com/ollama/ollama)** | Get up and running with Llama 3, Mistral, Gemma, and other large language models locally and on private servers. | [![Ollama Stars](https://img.shields.io/github/stars/ollama/ollama?style=social&color=white)](https://github.com/ollama/ollama/stargazers) |
 | **[llama.cpp](https://github.com/ggml-org/llama.cpp)** | LLM inference in C/C++ with minimal setup, hardware acceleration, and quantization support. | [![llama.cpp Stars](https://img.shields.io/github/stars/ggml-org/llama.cpp?style=social&color=white)](https://github.com/ggml-org/llama.cpp/stargazers) |
@@ -76,7 +76,7 @@ Contributions are very welcome! If you know of an awesome AI deployment platform
 
 1. Fork this repository. 🍴
 2. Add your entry to either the **SaaS / Hosted Platforms** or **Open-Source GitHub Projects** table in `README.md`.
-3. Ensure all fields (pricing, free limits, valuation, star badges, stargazers link) follow the established format.
+3. Ensure all fields (pricing, free limits, valuation, Stars_Badges, stargazers link) follow the established format.
 4. Open a Pull Request 📥 with a short description of the platform.
 
 ---
