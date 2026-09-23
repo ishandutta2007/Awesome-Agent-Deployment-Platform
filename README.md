@@ -1,209 +1,108 @@
-# Awesome-Agent-Deployment-Platform
-
-## Top Agent Deployment Platform Ecosystem
-
-
-
-**Curated List of SaaS Products & Open-Source GitHub Projects**  
-
-*Focused on AI Model & Agent Serving, Serverless GPU Inference, LLM Deployment, Scalable Agent Hosting & Production AI Infrastructure*  
-
-**Last updated: September 2026**
-
-
-
-This repository tracks notable **SaaS / hosted platforms** and **open-source projects** for **Agent and Model Deployment**. These systems make it easy to deploy, scale, and serve machine learning models, LLMs, and AI agents—covering serverless GPUs, inference APIs, autoscaling, and production-grade model serving.
-
-
-
-**Examples** include TrueFoundry, Modal, RunPod, Beam Cloud, Baseten, Replicate, OctoAI, Anyscale, Railway, and Fly.io (and their AI-focused offerings) (the category leaders and adjacent infrastructure platforms).
-
-
-
-**Open-source emphasis**: The open-source inference and model-serving ecosystem is excellent. **vLLM**, **Text Generation Inference (TGI)**, **NVIDIA Triton**, **Ray Serve**, **BentoML**, **KServe**, **LocalAI**, and related projects provide production-capable alternatives that many teams self-host. This section is heavily expanded.
-
-
-
-Contributions welcome! Open a PR to add/update entries. Keep descriptions factual and link to official sites.
-
-
-
-## Table of Contents
-
-- [SaaS/Hosted Platforms](#saas-hosted-platforms)
-
-- [Open-Source GitHub Projects](#open-source-github-projects)
-
-- [How to Contribute](#how-to-contribute)
-
-- [Disclaimer](#disclaimer)
-
-
-
-## SaaS/Hosted Platforms
-
-
-
-- **[Modal](https://modal.com/)**  
-
-  Serverless cloud platform optimized for AI and data workloads—run GPU inference, training, and agent workloads with minimal infrastructure management.
-
-
-
-- **[Baseten](https://www.baseten.co/)**  
-
-  High-performance inference platform for deploying open-source, custom, and fine-tuned models at scale with optimized runtimes and developer-friendly APIs.
-
-
-
-- **[Replicate](https://replicate.com/)**  
-
-  Platform for running open-source and custom models via simple API, popular for quick experimentation and production inference of community models.
-
-
-
-- **[RunPod, Beam Cloud, TrueFoundry](https://www.runpod.io/)**  
-
-  GPU cloud and ML platform offerings for training and deploying models/agents with flexible compute and deployment workflows.
-
-
-
-- **[Anyscale](https://www.anyscale.com/)**  
-
-  Managed Ray platform for scaling Python and AI workloads, including model serving and distributed agent/compute pipelines.
-
-
-
-- **[OctoAI, Railway, Fly.io (AI workloads)](https://octo.ai/)**  
-
-  Additional platforms supporting model hosting, edge/serverless deployment, and application-centric AI infrastructure.
-
-
-
-- **[Other commercial model & agent deployment platforms](https://modal.com/)**  
-
-  Solutions focused on serverless GPUs, inference APIs, and production agent hosting.
-
-
-
-## Open-Source GitHub Projects
-
-
-
-- **[vLLM](https://github.com/vllm-project/vllm)**  
-
-  High-throughput, memory-efficient open-source LLM serving engine with PagedAttention, continuous batching, and broad model support—widely used in production inference stacks.
-
-
-
-- **[Text Generation Inference (TGI)](https://github.com/huggingface/text-generation-inference)**  
-
-  Hugging Face’s production-oriented open-source server for deploying LLMs, optimized for performance and easy integration with the Hugging Face ecosystem.
-
-
-
-- **[NVIDIA Triton Inference Server](https://github.com/triton-inference-server/server)**  
-
-  Open-source inference server supporting multiple frameworks (TensorFlow, PyTorch, ONNX, etc.), dynamic batching, and scalable deployment on GPU/CPU.
-
-
-
-- **[Ray Serve](https://github.com/ray-project/ray)**  
-
-  Scalable model serving library within the Ray ecosystem—ideal for composing multi-model and multi-agent pipelines with Python-native APIs.
-
-
-
-- **[BentoML](https://github.com/bentoml/BentoML)**  
-
-  Open-source platform for packaging and deploying ML models and AI applications as production services, with strong support for custom runners and cloud/Kubernetes targets.
-
-
-
-- **[KServe](https://github.com/kserve/kserve)**  
-
-  Kubernetes-native model serving (CNCF-related) supporting multiple runtimes, autoscaling, and standardized inference protocols for cloud-native ML deployment.
-
-
-
-- **[LocalAI / OpenLLM / similar local & self-hosted servers](https://github.com/mudler/LocalAI)**  
-
-  Open-source projects that provide OpenAI-compatible APIs for running LLMs and related models on your own hardware or cluster.
-
-
-
-- **[Seldon Core & other MLOps serving stacks](https://github.com/SeldonIO/seldon-core)**  
-
-  Open platforms for deploying, managing, and monitoring ML models on Kubernetes with advanced graph and A/B capabilities.
-
-
-
-### Additional Strong Open-Source Options
-
-
-
-- **High-performance LLM serving**: vLLM and TGI as primary engines for large language model inference.
-
-- **Multi-framework serving**: Triton for heterogeneous model types and production robustness.
-
-- **Python-native scaling**: Ray Serve for agent and multi-step AI workflows.
-
-- **Packaging & deploy**: BentoML for turning models into services quickly.
-
-- **Kubernetes-native**: KServe and Seldon for enterprise cluster deployments.
-
-- **Local / edge**: LocalAI and similar for private or on-prem OpenAI-compatible endpoints.
-
-- Fully open self-hosted stacks (vLLM/TGI + KServe/Ray + monitoring) are production-viable for many teams.
-
-
-
-**Frameworks for building custom systems**:  
-
-The strongest open-source foundations are **vLLM** and **TGI** (LLM serving), **Triton** (general inference), **Ray Serve** (scalable Python/AI services), **BentoML** (packaging), and **KServe** (Kubernetes-native serving).  
-
-These can be combined into full self-hosted agent and model deployment platforms.  
-
-Commercial platforms (Modal, Baseten, Replicate, RunPod, Anyscale, etc.) provide serverless GPUs, zero-ops scaling, optimized runtimes, and managed infrastructure that accelerate time-to-production.  
-
-Many teams prototype on open engines (vLLM, TGI) and either self-host on Kubernetes or use a commercial platform for burst capacity and operational simplicity. Fully open stacks work well when you already operate GPU infrastructure.
-
-
-
-## How to Contribute
-
-
-
-1. Fork the repo.
-
-2. Add/edit entries in `README.md` (follow existing format).
-
-3. Include: name, link, 1–2 sentence description, and whether it's SaaS/hosted or open-source.
-
-4. Submit PR with a short explanation.
-
-
-
-Star the repo if you find it useful!
-
-
-
-## Disclaimer
-
-
-
-- This is a **community-curated** list — not exhaustive and not an endorsement.
-
-- Deploying AI models and agents involves compute cost, latency, security, and safety considerations. Misconfigured serving can expose models, leak data, or produce unreliable outputs. Apply authentication, rate limiting, monitoring, and safety layers.
-
-- Open-source serving engines offer transparency and cost control but require you to manage GPUs, scaling, upgrades, and reliability. Commercial platforms shift operational burden to the provider. Evaluate performance, cost, and compliance needs carefully.
-
-
+<p align="center">
+  <img src="assets/banner.svg" alt="Awesome Agent Deployment Platform Banner" width="100%">
+</p>
+
+# 🚀 Awesome Agent Deployment Platform Ecosystem 🤖
+
+<p align="center">
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Agent-Deployment-Platform"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Agent-Deployment-Platform?style=social" alt="GitHub stars" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Agent-Deployment-Platform/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Agent-Deployment-Platform?style=social" alt="GitHub forks" /></a>
+  <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
+</p>
 
 ---
 
+## 💡 Overview & Market Insights 📊
 
+Welcome to the **Awesome Agent Deployment Platform** repository! A curated list of production-grade **SaaS platforms**, **serverless GPU providers**, and **open-source model serving frameworks** designed for hosting, scaling, and deploying Large Language Models (LLMs), AI agents, and Machine Learning workflows.
 
-**Made for AI engineers, ML platform teams, and developers deploying models and agents in production.**  
+### 📈 Market Size & Industry Dynamics
+* **Estimated Market Size**: The global AI Infrastructure & Agent Deployment Platform market is estimated at **$18.5 Billion (2026)** and is projected to expand at a CAGR of **~34.2%**, reaching over **$75 Billion by 2030**.
+* **Market Fragmentation**: The market is currently **moderately fragmented**. While cloud hyperscalers provide foundational compute, specialized serverless GPU providers (e.g., Baseten, Modal) and open-source engines (e.g., vLLM, Ollama) lead developer adoption in high-efficiency LLM serving and autonomous agent hosting.
 
-Let's keep AI deployment open and high-performance—through excellent open-source serving engines and complementary managed platforms.
+---
+
+## 📑 Table of Contents 📌
+
+- [☁️ SaaS / Hosted Platforms](#-saas--hosted-platforms)
+- [🔓 Open-Source GitHub Projects](#-open-source-github-projects)
+- [🛠️ How to Contribute](#️-how-to-contribute)
+- [📈 Star History](#-star-history)
+- [💖 Support & Sponsorship](#-support--sponsorship)
+- [⚠️ Disclaimer](#%EF%B8%8F-disclaimer)
+
+---
+
+## ☁️ SaaS / Hosted Platforms 🌐
+
+> [!NOTE]
+> Below is a comparison of top managed AI deployment platforms, sorted by **Company Valuation / Market Size** (Descending).
+
+| Platform 🚀 | Description 📝 | Starting Paid Tier 💰 | Free Tier / Trial Limit 🎁 | Company Valuation / Revenue 💎 |
+| :--- | :--- | :--- | :--- | :--- |
+| **[Baseten](https://www.baseten.co/)** | High-performance inference platform for deploying custom & open-source models at scale with optimized runtimes. | Basic Pay-as-you-go ($0.0003/sec GPU compute) | Free trial credits granted upon sign-up ($2,500+ for startups) | **$13.0 Billion** ($600M ARR) |
+| **[Modal](https://modal.com/)** | Serverless cloud platform optimized for AI/ML—run GPU inference, training, and agent workloads with pythonic code. | Starter ($0/mo + usage-based compute) | **$30 free compute credits** every month | **$4.65 Billion** ($300M ARR) |
+| **[Anyscale](https://www.anyscale.com/)** | Managed Ray platform for scaling Python, distributed AI agent pipelines, and high-concurrency model serving. | Hosted Pay-as-you-go (per instance-hour) | **$100 in free trial compute credits** | **$1.65 Billion** ($100M ARR) |
+| **[RunPod](https://www.runpod.io/)** | Scalable GPU cloud platform & serverless inference for hosting custom LLMs and autonomous agent backends. | Serverless Pay-as-you-go ($0.0002/sec GPU) | No permanent free plan ($1,000 startup credit grants available) | **$1.0 Billion** ($120M ARR) |
+| **[Replicate](https://replicate.com/)** | API-first platform running community and custom open-source models with minimal infrastructure overhead. | Pay-per-use ($0.000225/sec on T4 GPU) | Limited free trial credits on sign-up | **$350 Million** (Acquired by Cloudflare) |
+| **[TrueFoundry](https://www.truefoundry.com/)** | Enterprise MLOps and AI Gateway platform for deploying models and multi-agent systems on private cloud / VPC. | Pro Tier starting at **$499/month** | **Developer Free Plan** (Up to 3 users & 50,000 monthly API requests) | **$21.3M Raised** (~$10M ARR) |
+
+---
+
+## 🔓 Open-Source GitHub Projects ⚡
+
+> [!TIP]
+> Production-ready open-source engines and frameworks for hosting LLMs, serving multi-agent graphs, and local model inference. Sorted by **GitHub Star Count** (Descending).
+
+| Repository 📦 | Description 🎯 | GitHub Stars ⭐ |
+| :--- | :--- | :--- |
+| **[Ollama](https://github.com/ollama/ollama)** | Get up and running with Llama 3, Mistral, Gemma, and other large language models locally and on private servers. | [![Ollama Stars](https://img.shields.io/github/stars/ollama/ollama?style=social&color=white)](https://github.com/ollama/ollama/stargazers) |
+| **[llama.cpp](https://github.com/ggml-org/llama.cpp)** | LLM inference in C/C++ with minimal setup, hardware acceleration, and quantization support. | [![llama.cpp Stars](https://img.shields.io/github/stars/ggml-org/llama.cpp?style=social&color=white)](https://github.com/ggml-org/llama.cpp/stargazers) |
+| **[vLLM](https://github.com/vllm-project/vllm)** | High-throughput, memory-efficient open-source LLM serving engine with PagedAttention and continuous batching. | [![vLLM Stars](https://img.shields.io/github/stars/vllm-project/vllm?style=social&color=white)](https://github.com/vllm-project/vllm/stargazers) |
+| **[LocalAI](https://github.com/mudler/LocalAI)** | Open-source OpenAI-compatible REST API for local AI inference without GPU requirement. | [![LocalAI Stars](https://img.shields.io/github/stars/mudler/LocalAI?style=social&color=white)](https://github.com/mudler/LocalAI/stargazers) |
+| **[Ray](https://github.com/ray-project/ray)** | Unified framework for scaling AI and Python applications, featuring Ray Serve for scalable multi-agent deployment. | [![Ray Stars](https://img.shields.io/github/stars/ray-project/ray?style=social&color=white)](https://github.com/ray-project/ray/stargazers) |
+| **[BentoML](https://github.com/bentoml/BentoML)** | Build, test, and deploy production-grade AI applications and model services on any cloud infrastructure. | [![BentoML Stars](https://img.shields.io/github/stars/bentoml/BentoML?style=social&color=white)](https://github.com/bentoml/BentoML/stargazers) |
+| **[Text Generation Inference](https://github.com/huggingface/text-generation-inference)** | Hugging Face's production-oriented server for deploying LLMs with optimized inference runtimes. | [![TGI Stars](https://img.shields.io/github/stars/huggingface/text-generation-inference?style=social&color=white)](https://github.com/huggingface/text-generation-inference/stargazers) |
+| **[KServe](https://github.com/kserve/kserve)** | Kubernetes-native model serving platform supporting autoscaling, multi-model runtimes, and enterprise MLOps. | [![KServe Stars](https://img.shields.io/github/stars/kserve/kserve?style=social&color=white)](https://github.com/kserve/kserve/stargazers) |
+| **[Triton Inference Server](https://github.com/triton-inference-server/server)** | NVIDIA's multi-framework open-source inference server for high-performance CPU & GPU model deployment. | [![Triton Stars](https://img.shields.io/github/stars/triton-inference-server/server?style=social&color=white)](https://github.com/triton-inference-server/server/stargazers) |
+| **[Seldon Core](https://github.com/SeldonIO/seldon-core)** | Cloud-native MLOps framework for deploying, auditing, and managing thousands of machine learning models on Kubernetes. | [![Seldon Core Stars](https://img.shields.io/github/stars/SeldonIO/seldon-core?style=social&color=white)](https://github.com/SeldonIO/seldon-core/stargazers) |
+
+---
+
+## 🛠️ How to Contribute 🤝
+
+Contributions are very welcome! If you know of an awesome AI deployment platform or open-source serving engine:
+
+1. Fork this repository. 🍴
+2. Add your entry to either the **SaaS / Hosted Platforms** or **Open-Source GitHub Projects** table in `README.md`.
+3. Ensure all fields (pricing, free limits, valuation, star badges, stargazers link) follow the established format.
+4. Open a Pull Request 📥 with a short description of the platform.
+
+---
+
+## 📈 Star History 🌟
+
+[![Star History Chart](https://star-history.dera.page/svg?repos=ishandutta2007/Awesome-Agent-Deployment-Platform&type=date&legend=top-left)](https://star-history.dera.page/#ishandutta2007/Awesome-Agent-Deployment-Platform&type=date&legend=top-left)
+
+---
+
+## 💖 Support & Sponsorship ☕
+
+If you find this curated ecosystem list helpful for your AI architecture, team, or projects, please consider supporting the maintenance of this repository!
+
+* 🌟 **Star** this repository to show your appreciation.
+* 🔀 **Fork** and share it with fellow AI engineers and MLOps practitioners.
+* ☕ **Buy me a coffee**: Support ongoing open-source research via the [GitHub Sponsors Dashboard](https://github.com/sponsors/ishandutta2007).
+
+<a href="https://github.com/sponsors/ishandutta2007">
+  <img src="https://img.shields.io/badge/Sponsor-ishandutta2007-ea4aaa?style=for-the-badge&logo=github-sponsors" alt="Sponsor on GitHub"/>
+</a>
+
+---
+
+## ⚠️ Disclaimer 📜
+
+- This repository is a community-curated collection intended for informational and educational purposes.
+- Valuations, pricing plans, and free tier limits are subject to change by respective platform providers.
+- When deploying production AI applications, always ensure proper authentication, rate limiting, and security compliance.

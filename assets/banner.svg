@@ -1,0 +1,129 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="50%" stop-color="#1e1b4b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    
+    <linearGradient id="accent-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#818cf8"/>
+      <stop offset="50%" stop-color="#c084fc"/>
+      <stop offset="100%" stop-color="#f472b6"/>
+    </linearGradient>
+    
+    <linearGradient id="text-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#e2e8f0"/>
+    </linearGradient>
+
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(255, 255, 255, 0.05)" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <style>
+    .title {
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      font-weight: 800;
+      font-size: 44px;
+      fill: url(#text-grad);
+    }
+    .subtitle {
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      font-weight: 500;
+      font-size: 20px;
+      fill: #94a3b8;
+    }
+    .badge-text {
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      font-weight: 600;
+      font-size: 14px;
+      fill: #c084fc;
+    }
+    
+    /* Dynamic Animations */
+    @keyframes pulse {
+      0% { opacity: 0.3; transform: scale(1); }
+      50% { opacity: 0.7; transform: scale(1.08); }
+      100% { opacity: 0.3; transform: scale(1); }
+    }
+    @keyframes float1 {
+      0% { transform: translateY(0px) rotate(0deg); }
+      50% { transform: translateY(-15px) rotate(3deg); }
+      100% { transform: translateY(0px) rotate(0deg); }
+    }
+    @keyframes float2 {
+      0% { transform: translateY(0px) rotate(0deg); }
+      50% { transform: translateY(12px) rotate(-3deg); }
+      100% { transform: translateY(0px) rotate(0deg); }
+    }
+    @keyframes dash {
+      to { stroke-dashoffset: -40; }
+    }
+    
+    .glow-orb-1 {
+      animation: pulse 6s ease-in-out infinite;
+      transform-origin: 200px 150px;
+    }
+    .glow-orb-2 {
+      animation: pulse 8s ease-in-out infinite 1s;
+      transform-origin: 1000px 150px;
+    }
+    .floating-node-1 {
+      animation: float1 5s ease-in-out infinite;
+    }
+    .floating-node-2 {
+      animation: float2 6s ease-in-out infinite 0.5s;
+    }
+    .animated-stream {
+      stroke-dasharray: 8 8;
+      animation: dash 2s linear infinite;
+    }
+  </style>
+
+  <!-- Background Layer -->
+  <rect width="1200" height="300" rx="16" fill="url(#bg-grad)"/>
+  <rect width="1200" height="300" rx="16" fill="url(#grid)"/>
+
+  <!-- Background Dynamic Glowing Orbs (Kept subtle & behind text) -->
+  <circle class="glow-orb-1" cx="200" cy="150" r="180" fill="#6366f1" opacity="0.25" filter="blur(40px)"/>
+  <circle class="glow-orb-2" cx="1000" cy="150" r="160" fill="#a855f7" opacity="0.2" filter="blur(40px)"/>
+
+  <!-- Background Network Connections & Nodes -->
+  <g opacity="0.35">
+    <line x1="100" y1="80" x2="250" y2="220" stroke="#818cf8" stroke-width="1.5" />
+    <line x1="250" y1="220" x2="400" y2="100" stroke="#c084fc" stroke-width="1.5" />
+    <line opacity="0.8" class="animated-stream" x1="100" y1="80" x2="400" y2="100" stroke="#f472b6" stroke-width="2" />
+    
+    <line x1="800" y1="200" x2="950" y2="80" stroke="#818cf8" stroke-width="1.5" />
+    <line x1="950" y1="80" x2="1100" y2="220" stroke="#c084fc" stroke-width="1.5" />
+    <line class="animated-stream" x1="800" y1="200" x2="1100" y2="220" stroke="#38bdf8" stroke-width="2" />
+
+    <!-- Dynamic Floating Decorative Circles -->
+    <g class="floating-node-1">
+      <circle cx="100" cy="80" r="6" fill="#818cf8" />
+      <circle cx="950" cy="80" r="8" fill="#c084fc" />
+    </g>
+    <g class="floating-node-2">
+      <circle cx="250" cy="220" r="8" fill="#f472b6" />
+      <circle cx="1100" cy="220" r="6" fill="#38bdf8" />
+    </g>
+  </g>
+
+  <!-- Foreground Content Container (Guaranteed legibility) -->
+  <g transform="translate(600, 150)" text-anchor="middle">
+    <!-- Tag/Badge -->
+    <rect x="-140" y="-95" width="280" height="30" rx="15" fill="rgba(192, 132, 252, 0.1)" stroke="rgba(192, 132, 252, 0.3)" stroke-width="1"/>
+    <text y="-75" class="badge-text">🚀 PRODUCTION AI INFRASTRUCTURE</text>
+
+    <!-- Main Title -->
+    <text y="-20" class="title">Awesome Agent Deployment Platform</text>
+    
+    <!-- Gradient Line Divider -->
+    <rect x="-250" y="5" width="500" height="3" rx="1.5" fill="url(#accent-grad)"/>
+
+    <!-- Subtitle -->
+    <text y="45" class="subtitle">Top SaaS &amp; Open-Source Ecosystem for Serving AI Models &amp; Agents</text>
+  </g>
+</svg>
